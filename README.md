@@ -77,13 +77,17 @@ Raw CSV Data
 
 ---
 
-## 🎥 Project Demo
+## 🎥 Project Demonstration
 
-A concise 3-minute walkthrough covering architecture, ETL, modeling, and dashboard insights.
+A concise 3-minute walkthrough covering:
 
-👉 Demo Video: `https://youtu.be/KeTSveT31P0`
+✔ End-to-End Data Pipeline  
+✔ Star Schema Architecture  
+✔ SQL Analytical Views  
+✔ Power BI Intelligence Dashboard  
+✔ Key Risk Findings  
 
-
+🔗 Video Link: https://youtu.be/iEJSKgreLU4
 
 
 
