@@ -79,7 +79,11 @@ Raw CSV Data
 
 ## 🎥 Project Demo
 
-👉 **Project Demo:** [Watch Here](https://youtu.be/iEJSKgreLU4)
+A concise 3-minute walkthrough covering architecture, ETL, modeling, and dashboard insights.
+
+👉 Demo Video: `https://youtu.be/KeTSveT31P0`
+
+
 
 
 
