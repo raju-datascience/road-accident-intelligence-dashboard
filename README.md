@@ -81,8 +81,9 @@ Raw CSV Data
 
 ## 🎥 Project Demo
 
-👉 Watch the 3-Minute Walkthrough:  
-[Project Explanation Video](https://youtu.be/KeTSveT31P0)
+🔗 Video Link: https://youtu.be/KeTSveT31P0
+
+
 
 ---eT31P0]
 <img width="733" height="946" alt="image" src="https://github.com/user-attachments/assets/e5122172-386f-46b4-805a-17cebc259e2b" />
