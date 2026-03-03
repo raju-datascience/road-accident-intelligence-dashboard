@@ -24,8 +24,6 @@ to support **data-driven safety decisions**.
 
 ## 🏗 System Architecture
 
-![Architecture Diagram](image/road_accident_architecture.png)
-
 **Data Flow:**
 
 Raw CSV Data  
