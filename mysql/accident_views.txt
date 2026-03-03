@@ -1,0 +1,239 @@
+CREATE VIEW vw_global_static AS
+SELECT 
+    2016 AS total_observations,
+    COUNT(*) AS total_accidents,
+    COUNT(*) / 2016 AS incident_rate,
+    AVG(blackspot_score) AS avg_blackspot_score
+FROM fact_accident;
+
+select * from vw_global_static;
+
+CREATE VIEW vw_location_summary AS
+SELECT 
+    l.location_name,
+    COUNT(*) AS accident_count,
+    COUNT(*) / 168 AS location_incident_rate
+FROM fact_accident f
+JOIN dim_location l ON f.location_id = l.location_id
+GROUP BY l.location_name;
+
+CREATE VIEW vw_day_summary AS
+SELECT 
+    t.day_name,
+    COUNT(*) AS accident_count
+FROM fact_accident f
+JOIN dim_time t ON f.time_id = t.time_id
+GROUP BY t.day_name;
+
+CREATE VIEW vw_hour_summary AS
+SELECT 
+    t.hour_of_day,
+    COUNT(*) AS accident_count
+FROM fact_accident f
+JOIN dim_time t ON f.time_id = t.time_id
+GROUP BY t.hour_of_day
+ORDER BY t.hour_of_day;
+
+CREATE VIEW vw_scatter_data AS
+SELECT 
+    f.accident_id,
+    l.location_name,
+    t.day_of_week,
+    t.hour_of_day,
+    f.severity,
+    f.vehicles_involved
+FROM fact_accident f
+JOIN dim_location l ON f.location_id = l.location_id
+JOIN dim_time t ON f.time_id = t.time_id;
+
+CREATE VIEW vw_whole_features AS
+SELECT
+    i.road_type,
+    i.lane_count,
+    i.signal_status,
+    i.enforcement_level,
+    i.speed_limit_bucket,
+    i.blackspot_bucket,
+    COUNT(*) AS accident_count
+FROM fact_accident f
+JOIN dim_infrastructure i
+ON f.infrastructure_id = i.infrastructure_id
+GROUP BY
+    i.road_type,
+    i.lane_count,
+    i.signal_status,
+    i.enforcement_level,
+    i.speed_limit_bucket,
+    i.blackspot_bucket;
+
+CREATE VIEW vw_location_features AS
+SELECT
+    e.weather,
+    e.lighting,
+    e.speed_bucket,
+    COUNT(*) AS accident_count
+FROM fact_accident f
+JOIN dim_environment e
+ON f.environment_id = e.environment_id
+GROUP BY
+    e.weather,
+    e.lighting,
+    e.speed_bucket;
+    
+CREATE VIEW vw_case_profile AS
+SELECT 
+    f.accident_id,
+    l.location_name,
+    t.day_name,
+    t.hour_of_day,
+    f.severity,
+    f.cause,
+    f.vehicles_involved,
+    f.veh_count_at_accident,
+    e.weather,
+    e.lighting
+FROM fact_accident f
+JOIN dim_location l ON f.location_id = l.location_id
+JOIN dim_time t ON f.time_id = t.time_id
+JOIN dim_environment e ON f.environment_id = e.environment_id;
+
+
+
+
+CREATE OR REPLACE VIEW vw_global_feature_panel_new AS
+
+SELECT
+    l.location_name,
+    'road_type' AS feature_type,
+    i.road_type AS feature_value,
+    COUNT(*) AS accident_count
+FROM fact_accident f
+JOIN dim_infrastructure i 
+    ON f.infrastructure_id = i.infrastructure_id
+JOIN dim_location l
+    ON f.location_id = l.location_id
+GROUP BY l.location_name, i.road_type
+
+UNION ALL
+
+SELECT
+    l.location_name,
+    'lane_count',
+    CAST(i.lane_count AS CHAR),
+    COUNT(*)
+FROM fact_accident f
+JOIN dim_infrastructure i 
+    ON f.infrastructure_id = i.infrastructure_id
+JOIN dim_location l
+    ON f.location_id = l.location_id
+GROUP BY l.location_name, i.lane_count
+
+UNION ALL
+
+SELECT
+    l.location_name,
+    'signal_status',
+    i.signal_status,
+    COUNT(*)
+FROM fact_accident f
+JOIN dim_infrastructure i 
+    ON f.infrastructure_id = i.infrastructure_id
+JOIN dim_location l
+    ON f.location_id = l.location_id
+GROUP BY l.location_name, i.signal_status
+
+UNION ALL
+
+SELECT
+    l.location_name,
+    'enforcement_level',
+    i.enforcement_level,
+    COUNT(*)
+FROM fact_accident f
+JOIN dim_infrastructure i 
+    ON f.infrastructure_id = i.infrastructure_id
+JOIN dim_location l
+    ON f.location_id = l.location_id
+GROUP BY l.location_name, i.enforcement_level
+
+UNION ALL
+
+SELECT
+    l.location_name,
+    'speed_limit_bucket',
+    i.speed_limit_bucket,
+    COUNT(*)
+FROM fact_accident f
+JOIN dim_infrastructure i 
+    ON f.infrastructure_id = i.infrastructure_id
+JOIN dim_location l
+    ON f.location_id = l.location_id
+GROUP BY l.location_name, i.speed_limit_bucket
+
+UNION ALL
+
+SELECT
+    l.location_name,
+    'blackspot_bucket',
+    i.blackspot_bucket,
+    COUNT(*)
+FROM fact_accident f
+JOIN dim_infrastructure i 
+    ON f.infrastructure_id = i.infrastructure_id
+JOIN dim_location l
+    ON f.location_id = l.location_id
+GROUP BY l.location_name, i.blackspot_bucket;
+
+
+
+CREATE OR REPLACE VIEW vw_global_feature_panel AS SELECT 'road_type' AS feature_type, i.road_type AS feature_value, COUNT(*) AS accident_count FROM fact_accident f JOIN dim_infrastructure i ON f.infrastructure_id = i.infrastructure_id GROUP BY i.road_type UNION ALL SELECT 'lane_count', CAST(i.lane_count AS CHAR), COUNT(*) FROM fact_accident f JOIN dim_infrastructure i ON f.infrastructure_id = i.infrastructure_id GROUP BY i.lane_count UNION ALL SELECT 'signal_status', i.signal_status, COUNT(*) FROM fact_accident f JOIN dim_infrastructure i ON f.infrastructure_id = i.infrastructure_id GROUP BY i.signal_status UNION ALL SELECT 'enforcement_level', i.enforcement_level, COUNT(*) FROM fact_accident f JOIN dim_infrastructure i ON f.infrastructure_id = i.infrastructure_id GROUP BY i.enforcement_level UNION ALL SELECT 'speed_limit_bucket', i.speed_limit_bucket, COUNT(*) FROM fact_accident f JOIN dim_infrastructure i ON f.infrastructure_id = i.infrastructure_id GROUP BY i.speed_limit_bucket UNION ALL SELECT 'blackspot_bucket', i.blackspot_bucket, COUNT(*) FROM fact_accident f JOIN dim_infrastructure i ON f.infrastructure_id = i.infrastructure_id GROUP BY i.blackspot_bucket;
+
+CREATE OR REPLACE VIEW vw_location_feature_panel AS
+SELECT
+    l.location_name,
+    'weather' AS feature_type,
+    e.weather AS feature_value,
+    COUNT(*) AS accident_count
+FROM fact_accident f
+JOIN dim_environment e ON f.environment_id = e.environment_id
+JOIN dim_location l ON f.location_id = l.location_id
+GROUP BY l.location_name, e.weather
+
+UNION ALL
+SELECT
+    l.location_name,
+    'lighting',
+    e.lighting,
+    COUNT(*)
+FROM fact_accident f
+JOIN dim_environment e ON f.environment_id = e.environment_id
+JOIN dim_location l ON f.location_id = l.location_id
+GROUP BY l.location_name, e.lighting
+
+UNION ALL
+SELECT
+    l.location_name,
+    'speed_bucket',
+    e.speed_bucket,
+    COUNT(*)
+FROM fact_accident f
+JOIN dim_environment e ON f.environment_id = e.environment_id
+JOIN dim_location l ON f.location_id = l.location_id
+GROUP BY l.location_name, e.speed_bucket;
+
+
+
+
+CREATE OR REPLACE VIEW vw_map_location_accidents AS
+SELECT
+    l.location_name,
+    l.latitude,
+    l.longitude,
+    COUNT(f.accident_id) AS accident_count
+FROM fact_accident f
+JOIN dim_location l
+    ON f.location_id = l.location_id
+GROUP BY
+    l.location_name,
+    l.latitude,
+    l.longitude;

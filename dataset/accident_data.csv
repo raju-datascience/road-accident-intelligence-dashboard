@@ -1,0 +1,94 @@
+road_type,lane_count,speed_limit_kmph,signal_status,enforcement_level,blackspot_score,latitude,longitude,day_of_week,hour_of_day,lighting,weather,avg_speed_kmph,severity,vehicles_involved,cause,veh_count_at_accident,speed_bucket,traffic_bucket,blackspot_bucket,speed_limit_bucket,day_name,location_name
+urban,2,47,TRUE,low,0.318,17.4504,78.3884,1,16,Day,Thunderstorm,16,Minor,1,Overspeeding,778,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Tuesday,HITEC City
+urban,2,47,TRUE,low,0.318,17.4504,78.3884,1,18,Day,Clear,9,Minor,2,Rear-end / Following too close,976,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Tuesday,HITEC City
+urban,2,47,TRUE,low,0.318,17.4504,78.3884,2,2,Night,Rain,16.7,Minor,1,Weather-related,494,Low Speed,Low Traffic,High Risk Zone,Low Speed Limit,Wednesday,HITEC City
+urban,2,47,TRUE,low,0.318,17.4504,78.3884,2,21,Night,Rain,16,Minor,3,Weather-related,1733,Low Speed,High Traffic,High Risk Zone,Low Speed Limit,Wednesday,HITEC City
+urban,2,47,TRUE,low,0.318,17.4504,78.3884,2,23,Night,Clear,5,Minor,1,Rear-end / Following too close,771,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Wednesday,HITEC City
+urban,2,47,TRUE,low,0.318,17.4504,78.3884,3,2,Night,Rain,22,Minor,5,Signal skip,264,Low Speed,Low Traffic,High Risk Zone,Low Speed Limit,Thursday,HITEC City
+urban,2,47,TRUE,low,0.318,17.4504,78.3884,3,4,Night,Rain,7.1,Minor,3,Weather-related,408,Low Speed,Low Traffic,High Risk Zone,Low Speed Limit,Thursday,HITEC City
+urban,2,47,TRUE,low,0.318,17.4504,78.3884,3,6,Day,Clear,16,Major,1,Signal skip,566,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Thursday,HITEC City
+urban,2,47,TRUE,low,0.318,17.4504,78.3884,3,23,Night,Rain,17.2,Minor,1,Weather-related,328,Low Speed,Low Traffic,High Risk Zone,Low Speed Limit,Thursday,HITEC City
+urban,2,47,TRUE,low,0.318,17.4504,78.3884,5,12,Day,Rain,6.8,Minor,2,Weather-related,724,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Saturday,HITEC City
+urban,2,47,TRUE,low,0.318,17.4504,78.3884,5,16,Day,Rain,16,Minor,3,Weather-related,196,Low Speed,Low Traffic,High Risk Zone,Low Speed Limit,Saturday,HITEC City
+urban,2,47,TRUE,low,0.318,17.4504,78.3884,6,3,Night,Clear,11.6,Minor,1,Overspeeding,561,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Sunday,HITEC City
+urban,2,47,TRUE,low,0.318,17.4504,78.3884,6,22,Night,Rain,26,Minor,2,Weather-related,177,Low Speed,Low Traffic,High Risk Zone,Low Speed Limit,Sunday,HITEC City
+urban,2,47,TRUE,low,0.318,17.4504,78.3884,6,3,Night,Rain,8,Minor,2,Weather-related,399,Low Speed,Low Traffic,High Risk Zone,Low Speed Limit,Sunday,HITEC City
+urban,2,51,TRUE,low,0.146,17.434,78.385,1,22,Night,Clear,16.5,Major,6,Signal skip,692,Low Speed,Medium Traffic,Medium Risk Zone,Low Speed Limit,Tuesday,Inorbit Mall
+urban,2,51,TRUE,low,0.146,17.434,78.385,3,18,Day,Rain,8.1,Minor,2,Weather-related,610,Low Speed,Medium Traffic,Medium Risk Zone,Low Speed Limit,Thursday,Inorbit Mall
+urban,2,51,TRUE,low,0.146,17.434,78.385,3,20,Night,Clear,8.1,Minor,5,Signal skip,1220,Low Speed,High Traffic,Medium Risk Zone,Low Speed Limit,Thursday,Inorbit Mall
+urban,2,51,TRUE,low,0.146,17.434,78.385,4,8,Day,Rain,16.8,Minor,3,Weather-related,1129,Low Speed,High Traffic,Medium Risk Zone,Low Speed Limit,Friday,Inorbit Mall
+urban,2,51,TRUE,low,0.146,17.434,78.385,5,0,Night,Rain,17.5,Minor,2,Signal skip,459,Low Speed,Low Traffic,Medium Risk Zone,Low Speed Limit,Saturday,Inorbit Mall
+urban,2,51,TRUE,low,0.146,17.434,78.385,5,16,Day,Thunderstorm,34.7,Minor,5,Unknown,153,Medium Speed,Low Traffic,Medium Risk Zone,Low Speed Limit,Saturday,Inorbit Mall
+urban,2,51,TRUE,low,0.146,17.434,78.385,5,22,Night,Thunderstorm,21.5,Major,7,Unknown,397,Low Speed,Low Traffic,Medium Risk Zone,Low Speed Limit,Saturday,Inorbit Mall
+urban,2,51,TRUE,low,0.146,17.434,78.385,6,8,Day,Clear,14.9,Minor,10,Rear-end / Following too close,1026,Low Speed,High Traffic,Medium Risk Zone,Low Speed Limit,Sunday,Inorbit Mall
+urban,2,51,TRUE,low,0.146,17.434,78.385,6,12,Day,Clear,33.6,Major,3,Overspeeding,304,Medium Speed,Low Traffic,Medium Risk Zone,Low Speed Limit,Sunday,Inorbit Mall
+urban,2,51,TRUE,low,0.146,17.434,78.385,6,1,Night,Rain,10.5,Minor,2,Weather-related,657,Low Speed,Medium Traffic,Medium Risk Zone,Low Speed Limit,Sunday,Inorbit Mall
+urban,2,51,TRUE,low,0.146,17.434,78.385,6,19,Dusk/Dawn,Rain,9.5,Minor,2,Weather-related,1003,Low Speed,High Traffic,Medium Risk Zone,Low Speed Limit,Sunday,Inorbit Mall
+rural,1,70,TRUE,high,0.127,17.398,78.2,2,3,Night,Clear,52.6,Minor,2,Unknown,82,Medium Speed,Low Traffic,Medium Risk Zone,Medium Speed Limit,Wednesday,Kokapet
+rural,1,70,TRUE,high,0.127,17.398,78.2,2,16,Day,Rain,37.9,Major,3,Weather-related,234,Medium Speed,Low Traffic,Medium Risk Zone,Medium Speed Limit,Wednesday,Kokapet
+rural,1,70,TRUE,high,0.127,17.398,78.2,4,0,Night,Clear,53.7,Major,3,Overspeeding,76,Medium Speed,Low Traffic,Medium Risk Zone,Medium Speed Limit,Friday,Kokapet
+rural,1,70,TRUE,high,0.127,17.398,78.2,4,11,Night,Clear,38.2,Minor,7,Overspeeding,665,Medium Speed,Medium Traffic,Medium Risk Zone,Medium Speed Limit,Friday,Kokapet
+rural,1,70,TRUE,high,0.127,17.398,78.2,6,21,Night,Clear,41.2,Minor,2,Overspeeding,279,Medium Speed,Low Traffic,Medium Risk Zone,Medium Speed Limit,Sunday,Kokapet
+urban,3,57,TRUE,medium,0.054,17.412,78.344,1,15,Day,Rain,23.2,Minor,3,Weather-related,318,Low Speed,Low Traffic,Low Risk Zone,Medium Speed Limit,Tuesday,Financial District
+urban,3,57,TRUE,medium,0.054,17.412,78.344,3,6,Day,Rain,23.6,Major,7,Signal skip,426,Low Speed,Low Traffic,Low Risk Zone,Medium Speed Limit,Thursday,Financial District
+urban,3,57,TRUE,medium,0.054,17.412,78.344,4,11,Day,Rain,20.6,Minor,3,Weather-related,1686,Low Speed,High Traffic,Low Risk Zone,Medium Speed Limit,Friday,Financial District
+urban,3,57,TRUE,medium,0.054,17.412,78.344,6,10,Day,Rain,5,Minor,8,Weather-related,2040,Low Speed,High Traffic,Low Risk Zone,Medium Speed Limit,Sunday,Financial District
+urban,4,47,FALSE,medium,0.228,17.441,78.377,1,21,Night,Rain,16.7,Minor,2,Weather-related,1120,Low Speed,High Traffic,High Risk Zone,Low Speed Limit,Tuesday,DLF Cyber City
+urban,4,47,FALSE,medium,0.228,17.441,78.377,2,8,Day,Clear,20.6,Minor,2,Unknown,1208,Low Speed,High Traffic,High Risk Zone,Low Speed Limit,Wednesday,DLF Cyber City
+urban,4,47,FALSE,medium,0.228,17.441,78.377,3,20,Night,Clear,15.9,Minor,1,Unknown,882,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Thursday,DLF Cyber City
+urban,4,47,FALSE,medium,0.228,17.441,78.377,4,1,Night,Rain,5.7,Minor,2,Weather-related,687,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Friday,DLF Cyber City
+urban,4,47,FALSE,medium,0.228,17.441,78.377,5,2,Night,Rain,13.8,Minor,1,Weather-related,463,Low Speed,Low Traffic,High Risk Zone,Low Speed Limit,Saturday,DLF Cyber City
+urban,4,47,FALSE,medium,0.228,17.441,78.377,5,3,Night,Rain,14.5,Minor,2,Weather-related,990,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Saturday,DLF Cyber City
+urban,4,47,FALSE,medium,0.228,17.441,78.377,6,0,Night,Rain,16,Minor,2,Weather-related,978,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Sunday,DLF Cyber City
+urban,4,47,FALSE,medium,0.228,17.441,78.377,6,23,Night,Clear,14.8,Minor,1,Unknown,817,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Sunday,DLF Cyber City
+urban,2,51,TRUE,low,0.247,17.452,78.38,1,8,Day,Clear,15.5,Major,6,Unknown,682,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Tuesday,Shilparamam
+urban,2,51,TRUE,low,0.247,17.452,78.38,2,18,Day,Rain,26.7,Minor,8,Signal skip,460,Low Speed,Low Traffic,High Risk Zone,Low Speed Limit,Wednesday,Shilparamam
+urban,2,51,TRUE,low,0.247,17.452,78.38,2,22,Night,Rain,20.4,Minor,1,Signal skip,267,Low Speed,Low Traffic,High Risk Zone,Low Speed Limit,Wednesday,Shilparamam
+urban,2,51,TRUE,low,0.247,17.452,78.38,3,17,Day,Rain,5,Minor,5,Rear-end / Following too close,1116,Low Speed,High Traffic,High Risk Zone,Low Speed Limit,Thursday,Shilparamam
+urban,2,51,TRUE,low,0.247,17.452,78.38,3,21,Night,Clear,20.1,Minor,4,Signal skip,1056,Low Speed,High Traffic,High Risk Zone,Low Speed Limit,Thursday,Shilparamam
+urban,2,51,TRUE,low,0.247,17.452,78.38,5,3,Night,Rain,31,Minor,2,Signal skip,190,Medium Speed,Low Traffic,High Risk Zone,Low Speed Limit,Saturday,Shilparamam
+urban,2,51,TRUE,low,0.247,17.452,78.38,5,17,Day,Rain,15.9,Minor,3,Weather-related,945,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Saturday,Shilparamam
+urban,2,51,TRUE,low,0.247,17.452,78.38,5,19,Dusk/Dawn,Rain,11.1,Minor,6,Signal skip,639,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Saturday,Shilparamam
+urban,2,51,TRUE,low,0.247,17.452,78.38,5,21,Night,Rain,5,Minor,2,Weather-related,1046,Low Speed,High Traffic,High Risk Zone,Low Speed Limit,Saturday,Shilparamam
+highway,8,119,TRUE,medium,0.222,17.2313,78.4294,1,22,Night,Clear,87.3,Major,2,Overspeeding,6299,High Speed,High Traffic,High Risk Zone,High Speed Limit,Tuesday,Airport Area
+highway,8,119,TRUE,medium,0.222,17.2313,78.4294,2,3,Night,Rain,85.9,Fatal,1,Weather-related,4766,High Speed,High Traffic,High Risk Zone,High Speed Limit,Wednesday,Airport Area
+highway,8,119,TRUE,medium,0.222,17.2313,78.4294,4,0,Night,Rain,90.1,Minor,2,Overspeeding,2403,High Speed,High Traffic,High Risk Zone,High Speed Limit,Friday,Airport Area
+highway,8,119,TRUE,medium,0.222,17.2313,78.4294,4,1,Night,Rain,87.9,Minor,3,Weather-related,3167,High Speed,High Traffic,High Risk Zone,High Speed Limit,Friday,Airport Area
+highway,8,119,TRUE,medium,0.222,17.2313,78.4294,5,4,Night,Rain,98.5,Fatal,2,Weather-related,953,High Speed,Medium Traffic,High Risk Zone,High Speed Limit,Saturday,Airport Area
+highway,8,119,TRUE,medium,0.222,17.2313,78.4294,6,18,Day,Clear,78.2,Minor,3,Overspeeding,5227,High Speed,High Traffic,High Risk Zone,High Speed Limit,Sunday,Airport Area
+highway,8,119,TRUE,medium,0.222,17.2313,78.4294,6,20,Night,Rain,84.5,Minor,3,Overspeeding,5907,High Speed,High Traffic,High Risk Zone,High Speed Limit,Sunday,Airport Area
+urban,4,49,TRUE,high,0.605,17.426,78.41,1,10,Day,Rain,23.7,Minor,2,Weather-related,920,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Tuesday,Jubilee Hills
+urban,4,49,TRUE,high,0.605,17.426,78.41,1,13,Day,Rain,15.2,Minor,5,Weather-related,810,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Tuesday,Jubilee Hills
+urban,4,49,TRUE,high,0.605,17.426,78.41,1,19,Dusk/Dawn,Clear,17.5,Major,2,Overspeeding,986,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Tuesday,Jubilee Hills
+urban,4,49,TRUE,high,0.605,17.426,78.41,2,2,Night,Rain,18.4,Minor,2,Weather-related,443,Low Speed,Low Traffic,High Risk Zone,Low Speed Limit,Wednesday,Jubilee Hills
+urban,4,49,TRUE,high,0.605,17.426,78.41,2,21,Night,Rain,13.1,Minor,1,Weather-related,607,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Wednesday,Jubilee Hills
+urban,4,49,TRUE,high,0.605,17.426,78.41,3,4,Night,Rain,16.3,Minor,2,Weather-related,625,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Thursday,Jubilee Hills
+urban,4,49,TRUE,high,0.605,17.426,78.41,3,19,Dusk/Dawn,Clear,5.2,Minor,4,Signal skip,1921,Low Speed,High Traffic,High Risk Zone,Low Speed Limit,Thursday,Jubilee Hills
+urban,4,49,TRUE,high,0.605,17.426,78.41,4,9,Day,Clear,16,Minor,1,Overspeeding,2138,Low Speed,High Traffic,High Risk Zone,Low Speed Limit,Friday,Jubilee Hills
+urban,4,49,TRUE,high,0.605,17.426,78.41,4,11,Day,Rain,16,Minor,3,Weather-related,931,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Friday,Jubilee Hills
+urban,4,49,TRUE,high,0.605,17.426,78.41,5,3,Night,Rain,10.4,Minor,2,Weather-related,571,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Saturday,Jubilee Hills
+urban,4,49,TRUE,high,0.605,17.426,78.41,5,8,Day,Rain,11.4,Minor,1,Weather-related,1058,Low Speed,High Traffic,High Risk Zone,Low Speed Limit,Saturday,Jubilee Hills
+urban,4,49,TRUE,high,0.605,17.426,78.41,5,20,Night,Rain,13.8,Minor,4,Rear-end / Following too close,1562,Low Speed,High Traffic,High Risk Zone,Low Speed Limit,Saturday,Jubilee Hills
+urban,4,49,TRUE,high,0.605,17.426,78.41,6,0,Night,Clear,16,Major,3,Overspeeding,418,Low Speed,Low Traffic,High Risk Zone,Low Speed Limit,Sunday,Jubilee Hills
+urban,4,49,TRUE,high,0.605,17.426,78.41,6,14,Day,Rain,10.6,Major,5,Weather-related,992,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Sunday,Jubilee Hills
+urban,4,49,TRUE,high,0.605,17.426,78.41,6,17,Day,Rain,12,Minor,2,Rear-end / Following too close,1355,Low Speed,High Traffic,High Risk Zone,Low Speed Limit,Sunday,Jubilee Hills
+urban,2,58,FALSE,high,0.268,17.4571,78.3641,1,17,Day,Rain,5,Minor,6,Rear-end / Following too close,1470,Low Speed,High Traffic,High Risk Zone,Medium Speed Limit,Tuesday,Kondapur
+urban,2,58,FALSE,high,0.268,17.4571,78.3641,4,10,Day,Clear,8,Minor,6,Rear-end / Following too close,1863,Low Speed,High Traffic,High Risk Zone,Medium Speed Limit,Friday,Kondapur
+urban,2,58,FALSE,high,0.268,17.4571,78.3641,4,20,Night,Rain,5,Minor,5,Rear-end / Following too close,1303,Low Speed,High Traffic,High Risk Zone,Medium Speed Limit,Friday,Kondapur
+urban,2,58,FALSE,high,0.268,17.4571,78.3641,4,8,Day,Rain,5,Minor,5,Weather-related,1943,Low Speed,High Traffic,High Risk Zone,Medium Speed Limit,Friday,Kondapur
+highway,4,106,FALSE,high,0.006,17.43,78.35,4,12,Day,Rain,67.9,Minor,6,Weather-related,1198,High Speed,High Traffic,Low Risk Zone,High Speed Limit,Friday,ORR
+highway,4,106,FALSE,high,0.006,17.43,78.35,6,6,Day,Rain,60.5,Minor,3,Weather-related,1717,High Speed,High Traffic,Low Risk Zone,High Speed Limit,Sunday,ORR
+highway,4,106,FALSE,high,0.006,17.43,78.35,6,12,Day,Clear,76,Major,2,Overspeeding,1251,High Speed,High Traffic,Low Risk Zone,High Speed Limit,Sunday,ORR
+highway,4,106,FALSE,high,0.006,17.43,78.35,6,22,Night,Clear,75.9,Minor,1,Overspeeding,3884,High Speed,High Traffic,Low Risk Zone,High Speed Limit,Sunday,ORR
+urban,2,56,TRUE,medium,0.107,17.4474,78.3714,2,4,Night,Rain,17.2,Minor,3,Weather-related,274,Low Speed,Low Traffic,Medium Risk Zone,Medium Speed Limit,Wednesday,Gachibowli
+urban,2,56,TRUE,medium,0.107,17.4474,78.3714,3,8,Day,Rain,7.6,Minor,4,Rear-end / Following too close,1769,Low Speed,High Traffic,Medium Risk Zone,Medium Speed Limit,Thursday,Gachibowli
+urban,2,56,TRUE,medium,0.107,17.4474,78.3714,3,20,Night,Rain,5,Minor,3,Rear-end / Following too close,1052,Low Speed,High Traffic,Medium Risk Zone,Medium Speed Limit,Thursday,Gachibowli
+urban,2,56,TRUE,medium,0.107,17.4474,78.3714,5,16,Day,Clear,27.6,Major,3,Unknown,470,Low Speed,Low Traffic,Medium Risk Zone,Medium Speed Limit,Saturday,Gachibowli
+urban,2,56,TRUE,medium,0.107,17.4474,78.3714,6,19,Dusk/Dawn,Rain,5.5,Major,3,Weather-related,1191,Low Speed,High Traffic,Medium Risk Zone,Medium Speed Limit,Sunday,Gachibowli
+urban,2,56,TRUE,medium,0.107,17.4474,78.3714,6,10,Day,Rain,6.6,Minor,5,Rear-end / Following too close,1585,Low Speed,High Traffic,Medium Risk Zone,Medium Speed Limit,Sunday,Gachibowli
+urban,2,41,FALSE,low,0.267,17.406,78.392,2,18,Day,Rain,5,Minor,2,Weather-related,1283,Low Speed,High Traffic,High Risk Zone,Low Speed Limit,Wednesday,Manikonda
+urban,2,41,FALSE,low,0.267,17.406,78.392,3,20,Night,Rain,5,Minor,7,Weather-related,663,Low Speed,Medium Traffic,High Risk Zone,Low Speed Limit,Thursday,Manikonda
+urban,2,41,FALSE,low,0.267,17.406,78.392,4,9,Day,Rain,5,Minor,4,Weather-related,1676,Low Speed,High Traffic,High Risk Zone,Low Speed Limit,Friday,Manikonda
+urban,2,41,FALSE,low,0.267,17.406,78.392,5,1,Night,Rain,5,Minor,2,Weather-related,421,Low Speed,Low Traffic,High Risk Zone,Low Speed Limit,Saturday,Manikonda
+urban,2,41,FALSE,low,0.267,17.406,78.392,5,19,Dusk/Dawn,Clear,5,Major,7,Rear-end / Following too close,1754,Low Speed,High Traffic,High Risk Zone,Low Speed Limit,Saturday,Manikonda
+urban,2,41,FALSE,low,0.267,17.406,78.392,5,22,Night,Clear,22,Major,1,Overspeeding,315,Low Speed,Low Traffic,High Risk Zone,Low Speed Limit,Saturday,Manikonda
